@@ -10,6 +10,10 @@ permissions:
   id-token: write
   contents: read
 
+# Aquí añadimos la variable para solucionar la advertencia de GitHub
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   sync:
     runs-on: ubuntu-latest
