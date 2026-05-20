@@ -29,4 +29,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: sync bucket
-        run: aws s3 sync ./files/ s3://${{ secrets.AWS_BUCK_NAME }} --delete
+        run: aws s3 sync ./files/ s3://github-trust-tutorial11 --delete
